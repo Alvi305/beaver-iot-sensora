@@ -210,15 +210,21 @@
 
         <dependency>
             <groupId>com.milesight.beaveriot.integrations</groupId>
-            <artifactId>msc-integration</artifactId>
+            <artifactId>milesight-gateway</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.milesight.beaveriot.integrations</groupId>
-            <artifactId>milesight-gateway</artifactId>
+            <artifactId>sensora-integration</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.milesight.beaveriot.integrations</groupId>-->
+<!--            <artifactId>msc-integration</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
         <!-- unit test -->
         <!--<dependency>
@@ -260,6 +266,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.3.4</version>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.central</groupId>

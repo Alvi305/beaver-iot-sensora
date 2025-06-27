@@ -1,0 +1,991 @@
+2025-06-26 05:02:50 - INFO 21340 [][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-06-26 05:02:50 - INFO 21340 [][main] INFO  c.m.b.p.i.JPAApplicationContextInitializer - Enable JPA DataAspect function, and dynamically add JPA STATEMENT_INSPECTOR
+2025-06-26 05:02:50 - INFO 21340 [][main] INFO  c.m.beaveriot.StandardApplication - Starting StandardApplication using Java 17.0.15 with PID 21340 (C:\sensora\beaver-iot-sensora\application\application-standard\target\classes started by alvir in C:\sensora\beaver-iot-sensora)
+2025-06-26 05:02:50 - INFO 21340 [][main] INFO  c.m.beaveriot.StandardApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-26 05:02:58 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:02:58 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26 05:03:02 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3842 ms. Found 29 JPA repository interfaces.
+2025-06-26 05:03:03 - INFO 21340 [][main] INFO  o.s.c.annotation.AutoProxyRegistrar - AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2025-06-26 05:03:04 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:03:04 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.device.repository.DeviceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.devicetemplate.repository.DeviceTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardEntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardHomeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.MenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleMenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.TenantRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityLatestRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.credentials.repository.CredentialsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowEntityRelationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRefRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceTempRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.adapter.db.service.repository.DbResourceDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduledTaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduleSettingsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:03:05 - INFO 21340 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272 ms. Found 0 JDBC repository interfaces.
+2025-06-26 05:03:06 - INFO 21340 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method GenericContextAutoConfiguration.springContext is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:03:06 - INFO 21340 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method RuleEngineAutoConfiguration.componentDefinitionCache is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:03:09 - WARN 21340 [][main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-26 05:03:09 - INFO 21340 [][main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-26 05:03:09 - INFO 21340 [][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17771 ms
+2025-06-26 05:03:10 - INFO 21340 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-26 05:03:11 - INFO 21340 [][main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:~/beaver-iot/h2/beaver user=SA
+2025-06-26 05:03:11 - INFO 21340 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-26 05:03:11 - INFO 21340 [][main] INFO  liquibase.database - Set default schema name to PUBLIC
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/authentication.sql
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/dashboard.sql
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/device.sql
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/entity.sql
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/schema.sql
+2025-06-26 05:03:15 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/user.sql
+2025-06-26 05:03:17 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/dashboard.sql
+2025-06-26 05:03:17 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/device.sql
+2025-06-26 05:03:17 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/entity.sql
+2025-06-26 05:03:17 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/user.sql
+2025-06-26 05:03:17 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/workflow.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/credentials.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/dashboard.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device_template.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/entity.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/mqtt.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/resource.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/user.sql
+2025-06-26 05:03:22 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/workflow.sql
+2025-06-26 05:03:23 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/scheduler/h2/sql/v1.2.0/scheduler.sql
+2025-06-26 05:03:23 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.1/entity.sql
+2025-06-26 05:03:23 - INFO 21340 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.3.0/dashboard.sql
+2025-06-26 05:03:23 - INFO 21340 [][main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.command - Using deploymentId: 0885404411
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.0.0/authentication.sql::oauth2_v1.0.0_20241024_140400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.0.0/authentication.sql::oauth2_v1.0.0_20241024_140400::loong ran successfully in 123ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.0.0/dashboard.sql::dashboard_v1.0.0_20241024_095400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.0.0/dashboard.sql::dashboard_v1.0.0_20241024_095400::loong ran successfully in 30ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.0.0/device.sql::device_v1.0.0_20241024_095400::simon
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.0.0/device.sql::device_v1.0.0_20241024_095400::simon ran successfully in 14ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.0.0/entity.sql::entity_v1.0.0_20241024_095400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.0.0/entity.sql::entity_v1.0.0_20241024_095400::loong ran successfully in 28ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.0.0/user.sql::user_v1.0.0_20241024_095400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.0.0/user.sql::user_v1.0.0_20241024_095400::loong ran successfully in 13ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_20241120_152000::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_20241120_152000::loong ran successfully in 100ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_2025022111_162400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_2025022111_162400::loong ran successfully in 42ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_2025040711_162400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/dashboard.sql::dashboard_v1.1.0_2025040711_162400::loong ran successfully in 8ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/device.sql::device_v1.1.0_20241122_164400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/device.sql::device_v1.1.0_20241122_164400::loong ran successfully in 25ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/device.sql::device_v1.1.0_2025022111_162400::loong
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/device.sql::device_v1.1.0_2025022111_162400::loong ran successfully in 15ms
+2025-06-26 05:03:24 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/device.sql::device_v1.1.0_2025040711_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/device.sql::device_v1.1.0_2025040711_162400::loong ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241120_164000::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241120_164000::loong ran successfully in 41ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133000::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133000::Maglitch65 ran successfully in 15ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133001::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133001::Maglitch65 ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133002::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20241129_133002::Maglitch65 ran successfully in 10ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250115_101000::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250115_101000::loong ran successfully in 19ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250208_140100::Simon
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250208_140100::Simon ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250211_112200::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250211_112200::loong ran successfully in 14ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_2025022111_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_2025022111_162400::loong ran successfully in 34ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250304_100000::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250304_100000::loong ran successfully in 46ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250407_165500::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/entity.sql::entity_v1.1.0_20250407_165500::loong ran successfully in 9ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241119_155400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241119_155400::loong ran successfully in 51ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241209_092400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241209_092400::loong ran successfully in 21ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241210_112400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241210_112400::loong ran successfully in 15ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241211_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_20241211_162400::loong ran successfully in 28ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_2025022111_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_2025022111_162400::loong ran successfully in 59ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/user.sql::user_v1.1.0_2025040711_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/user.sql::user_v1.1.0_2025040711_162400::loong ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/workflow.sql::workflow_v1.0.0_20241210_134800::simon
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/workflow.sql::workflow_v1.0.0_20241210_134800::simon ran successfully in 19ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/workflow.sql::workflow_v1.1.0_2025022111_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/workflow.sql::workflow_v1.1.0_2025022111_162400::loong ran successfully in 14ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.1.0/workflow.sql::workflow_v1.1.0_2025040711_162400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.1.0/workflow.sql::workflow_v1.1.0_2025040711_162400::loong ran successfully in 4ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/credentials.sql::credentials_v1.2.0_20250224_103000::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/credentials.sql::credentials_v1.2.0_20250224_103000::Maglitch65 ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/dashboard.sql::dashboard_v1.2.0_20250331_095400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/dashboard.sql::dashboard_v1.2.0_20250331_095400::loong ran successfully in 9ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/dashboard.sql::dashboard_v1.2.0_20250415_095400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/dashboard.sql::dashboard_v1.2.0_20250415_095400::loong ran successfully in 13ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250319_155400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250319_155400::loong ran successfully in 8ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250319_160000::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250319_160000::loong ran successfully in 18ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250514_083900::pandalxb
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/device.sql::device_v1.2.0_20250514_083900::pandalxb ran successfully in 17ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/device_template.sql::device_template_v1.2.0_20250514_083900::pandalxb
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/device_template.sql::device_template_v1.2.0_20250514_083900::pandalxb ran successfully in 9ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/entity.sql::entity_v1.2.0_20250319_155400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/entity.sql::entity_v1.2.0_20250319_155400::loong ran successfully in 7ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/entity.sql::entity_v1.2.0_20250606_145500::pandalxb
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/entity.sql::entity_v1.2.0_20250606_145500::pandalxb ran successfully in 4ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/resource.sql::resource_v1.2.0_20250407_170000::simon
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/resource.sql::resource_v1.2.0_20250407_170000::simon ran successfully in 20ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/resource.sql::resource_v1.2.0_20250427_101200::simon
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/resource.sql::resource_v1.2.0_20250427_101200::simon ran successfully in 7ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250224_155400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250224_155400::loong ran successfully in 10ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250321_095400::loong
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250321_095400::loong ran successfully in 8ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250407_153000::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/user.sql::user_v1.2.0_20250407_153000::Maglitch65 ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.0/workflow.sql::workflow_v1.2.0_20250307_175400::zl
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.0/workflow.sql::workflow_v1.2.0_20250307_175400::zl ran successfully in 6ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/scheduler/h2/sql/v1.2.0/scheduler.sql::scheduler_v1.2.0_20250421_093000::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/scheduler/h2/sql/v1.2.0/scheduler.sql::scheduler_v1.2.0_20250421_093000::Maglitch65 ran successfully in 7ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/scheduler/h2/sql/v1.2.0/scheduler.sql::scheduler_v1.2.0_20250421_093001::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/scheduler/h2/sql/v1.2.0/scheduler.sql::scheduler_v1.2.0_20250421_093001::Maglitch65 ran successfully in 11ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.2.1/entity.sql::entity_v1.2.1_20250522_093000::simon
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.2.1/entity.sql::entity_v1.2.1_20250522_093000::simon ran successfully in 39ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Running Changeset: db/h2/sql/v1.3.0/dashboard.sql::dashboard_v1.3.0_20250528_100000::Maglitch65
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - Custom SQL executed
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.changelog - ChangeSet db/h2/sql/v1.3.0/dashboard.sql::dashboard_v1.3.0_20250528_100000::Maglitch65 ran successfully in 7ms
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - Run:                         49
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - Previously run:               0
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - Filtered out:                 0
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - -------------------------------
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - Total change sets:           49
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.util - Update summary generated
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.command - Update command completed successfully.
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 148
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-06-26 05:03:25 - INFO 21340 [][main] INFO  liquibase.command - Command execution complete
+2025-06-26 05:03:27 - INFO 21340 [][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26 05:03:27 - INFO 21340 [][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-06-26 05:03:28 - INFO 21340 [][main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-26 05:03:29 - INFO 21340 [][main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26 05:03:35 - INFO 21340 [][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26 05:03:35 - INFO 21340 [][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:03:38 - INFO 21340 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-06-26 05:03:38 - INFO 21340 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  io.moquette.broker.Server - Configuring message interceptors...
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  i.m.interception.BrokerInterceptor - Initializing broker interceptor. InterceptorIds=[DEFAULT_PUBLISH_LISTENER]
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  i.m.interception.BrokerInterceptor - Adding MQTT message interceptor. InterceptorId=DEFAULT_PUBLISH_LISTENER, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage, class io.moquette.interception.messages.InterceptConnectionLostMessage, class io.moquette.interception.messages.InterceptPublishMessage, class io.moquette.interception.messages.InterceptSubscribeMessage, class io.moquette.interception.messages.InterceptUnsubscribeMessage, class io.moquette.interception.messages.InterceptAcknowledgedMessage, class io.moquette.interception.messages.InterceptExceptionMessage]
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  io.moquette.broker.Server - Using default SSL context creator
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing CTrie
+2025-06-26 05:03:49 - INFO 21340 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing subscriptions store...
+2025-06-26 05:03:50 - INFO 21340 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Netty is using NIO
+2025-06-26 05:03:52 - INFO 21340 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2025-06-26 05:03:52 -ERROR 21340 [][main] ERROR io.moquette.broker.NewNettyAcceptor - Cannot bind to port: 1883
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-26 05:03:52 - WARN 21340 [][main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'dashboardService': Error creating bean with name 'dashboardService': Unsatisfied dependency expressed through field 'resourceManagerFacade': Error creating bean with name 'resourceService': Unsatisfied dependency expressed through field 'scheduler': Error creating bean with name 'scheduler': Unsatisfied dependency expressed through field 'messagePubSub': Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+2025-06-26 05:03:52 - INFO 21340 [][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:03:52 - INFO 21340 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-26 05:03:52 - INFO 21340 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-26 05:03:52 - INFO 21340 [][main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 05:03:52 -ERROR 21340 [][main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'dashboardService': Error creating bean with name 'dashboardService': Unsatisfied dependency expressed through field 'resourceManagerFacade': Error creating bean with name 'resourceService': Unsatisfied dependency expressed through field 'scheduler': Error creating bean with name 'scheduler': Unsatisfied dependency expressed through field 'messagePubSub': Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.milesight.beaveriot.StandardApplication.main(StandardApplication.java:30)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardService': Unsatisfied dependency expressed through field 'resourceManagerFacade': Error creating bean with name 'resourceService': Unsatisfied dependency expressed through field 'scheduler': Error creating bean with name 'scheduler': Unsatisfied dependency expressed through field 'messagePubSub': Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'resourceService': Unsatisfied dependency expressed through field 'scheduler': Error creating bean with name 'scheduler': Unsatisfied dependency expressed through field 'messagePubSub': Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduler': Unsatisfied dependency expressed through field 'messagePubSub': Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'messagePubSub' defined in class path resource [com/milesight/beaveriot/pubsub/config/MessagePubSubConfiguration.class]: Unsatisfied dependency expressed through method 'messagePubSub' parameter 0: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedMqttBrokerBridge' defined in class path resource [com/milesight/beaveriot/mqtt/broker/bridge/adapter/embed/EmbeddedMqttBrokerBridgeConfiguration.class]: Cannot bind to port: 1883
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 75 common frames omitted
+Caused by: java.lang.RuntimeException: Cannot bind to port: 1883
+	at io.moquette.broker.NewNettyAcceptor.initFactory(NewNettyAcceptor.java:228)
+	at io.moquette.broker.NewNettyAcceptor.initializePlainTCPTransport(NewNettyAcceptor.java:256)
+	at io.moquette.broker.NewNettyAcceptor.initialize(NewNettyAcceptor.java:174)
+	at io.moquette.broker.Server.startServer(Server.java:270)
+	at com.milesight.beaveriot.mqtt.broker.bridge.adapter.embed.EmbeddedMqttBrokerBridge.open(EmbeddedMqttBrokerBridge.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1910)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 86 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-26 05:08:31 - INFO 33448 [][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-06-26 05:08:31 - INFO 33448 [][main] INFO  c.m.b.p.i.JPAApplicationContextInitializer - Enable JPA DataAspect function, and dynamically add JPA STATEMENT_INSPECTOR
+2025-06-26 05:08:31 - INFO 33448 [][main] INFO  c.m.beaveriot.StandardApplication - Starting StandardApplication using Java 17.0.15 with PID 33448 (C:\sensora\beaver-iot-sensora\application\application-standard\target\classes started by alvir in C:\sensora\beaver-iot-sensora)
+2025-06-26 05:08:31 - INFO 33448 [][main] INFO  c.m.beaveriot.StandardApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-26 05:08:39 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:08:39 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26 05:08:43 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4268 ms. Found 29 JPA repository interfaces.
+2025-06-26 05:08:44 - INFO 33448 [][main] INFO  o.s.c.annotation.AutoProxyRegistrar - AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.device.repository.DeviceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.devicetemplate.repository.DeviceTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardEntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardHomeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.MenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleMenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.TenantRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityLatestRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.credentials.repository.CredentialsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowEntityRelationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRefRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceTempRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.adapter.db.service.repository.DbResourceDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduledTaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduleSettingsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:08:46 - INFO 33448 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 297 ms. Found 0 JDBC repository interfaces.
+2025-06-26 05:08:48 - INFO 33448 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method GenericContextAutoConfiguration.springContext is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:08:48 - INFO 33448 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method RuleEngineAutoConfiguration.componentDefinitionCache is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:08:51 - WARN 33448 [][main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-26 05:08:52 - INFO 33448 [][main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-26 05:08:52 - INFO 33448 [][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18848 ms
+2025-06-26 05:08:52 - INFO 33448 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-26 05:08:54 - INFO 33448 [][main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:~/beaver-iot/h2/beaver user=SA
+2025-06-26 05:08:54 - INFO 33448 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-26 05:08:54 - INFO 33448 [][main] INFO  liquibase.database - Set default schema name to PUBLIC
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/authentication.sql
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/dashboard.sql
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/device.sql
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/entity.sql
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/schema.sql
+2025-06-26 05:08:57 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/user.sql
+2025-06-26 05:08:59 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/dashboard.sql
+2025-06-26 05:08:59 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/device.sql
+2025-06-26 05:08:59 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/entity.sql
+2025-06-26 05:08:59 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/user.sql
+2025-06-26 05:08:59 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/workflow.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/credentials.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/dashboard.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device_template.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/entity.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/mqtt.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/resource.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/user.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/workflow.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/scheduler/h2/sql/v1.2.0/scheduler.sql
+2025-06-26 05:09:01 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.1/entity.sql
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.3.0/dashboard.sql
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - Run:                          0
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - Previously run:              49
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - Filtered out:                 0
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - -------------------------------
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - Total change sets:           49
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.util - Update summary generated
+2025-06-26 05:09:02 - INFO 33448 [][main] INFO  liquibase.command - Command execution complete
+2025-06-26 05:09:03 - INFO 33448 [][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26 05:09:03 - INFO 33448 [][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-06-26 05:09:04 - INFO 33448 [][main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-26 05:09:05 - INFO 33448 [][main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26 05:09:12 - INFO 33448 [][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26 05:09:12 - INFO 33448 [][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:09:13 - INFO 33448 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-06-26 05:09:13 - INFO 33448 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  io.moquette.broker.Server - Configuring message interceptors...
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  i.m.interception.BrokerInterceptor - Initializing broker interceptor. InterceptorIds=[DEFAULT_PUBLISH_LISTENER]
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  i.m.interception.BrokerInterceptor - Adding MQTT message interceptor. InterceptorId=DEFAULT_PUBLISH_LISTENER, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage, class io.moquette.interception.messages.InterceptConnectionLostMessage, class io.moquette.interception.messages.InterceptPublishMessage, class io.moquette.interception.messages.InterceptSubscribeMessage, class io.moquette.interception.messages.InterceptUnsubscribeMessage, class io.moquette.interception.messages.InterceptAcknowledgedMessage, class io.moquette.interception.messages.InterceptExceptionMessage]
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  io.moquette.broker.Server - Using default SSL context creator
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing CTrie
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing subscriptions store...
+2025-06-26 05:09:22 - INFO 33448 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Netty is using NIO
+2025-06-26 05:09:24 - INFO 33448 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2025-06-26 05:09:24 - INFO 33448 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=8083, protocol=Websocket MQTT
+2025-06-26 05:09:24 - INFO 33448 [][main] INFO  io.moquette.broker.Server - Moquette integration has been started successfully in 2530 ms
+2025-06-26 05:09:26 - INFO 33448 [][main] INFO  c.m.b.scheduler.core.Scheduler - schedule task 'clear-temp-resource' successfully, next execution time: 1750885826
+2025-06-26 05:09:26 - WARN 33448 [][main] WARN  c.m.beaveriot.pubsub.MessageRouter - dispatch message failed, no subscriber found for message: com.milesight.beaveriot.scheduler.core.model.ScheduledTaskUpdatedEvent
+2025-06-26 05:09:26 - INFO 33448 [][main] INFO  c.m.b.scheduler.core.Scheduler - callback for schedule task 'clear-temp-resource' was registered
+2025-06-26 05:09:29 - INFO 33448 [][main] INFO  o.a.c.m.DefaultConfigurationConfigurer - Adding custom InterceptStrategy with id: ruleEngineContextInterceptor and implementation: com.milesight.beaveriot.rule.observe.RuleEngineContextInterceptor@7b58475e
+2025-06-26 05:09:30 - WARN 33448 [][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-26 05:09:31 - INFO 33448 [][main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-26 05:09:31 - WARN 33448 [][main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-06-26 05:09:34 - INFO 33448 [][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-06-26 05:09:42 - INFO 33448 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language start
+2025-06-26 05:09:42 - INFO 33448 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language start
+2025-06-26 05:09:42 - INFO 33448 [][main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2025-06-26 05:09:42 - INFO 33448 [][main] INFO  org.xnio - XNIO version 3.8.16.Final
+2025-06-26 05:09:42 - INFO 33448 [][main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2025-06-26 05:09:42 - INFO 33448 [][main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-06-26 05:09:43 - INFO 33448 [][main] INFO  o.s.b.w.e.undertow.UndertowWebServer - Undertow started on port 9200 (http) with context path '/'
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is starting
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Tracing is enabled on CamelContext: camel-1
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:1)
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) started in 117ms (build:0ms init:0ms start:117ms)
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  c.m.beaveriot.StandardApplication - Started StandardApplication in 74.721 seconds (process running for 77.449)
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/uplink'
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/response'
+2025-06-26 05:09:44 - INFO 33448 [][main] INFO  c.m.b.c.i.b.IntegrationBootstrapManager - IntegrationBootstrapManager started, contains integrations : [system, milesight-gateway, msc-integration]
+2025-06-26 05:09:48 - INFO 33448 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration starting
+2025-06-26 05:09:48 - INFO 33448 [][main] INFO  c.m.b.i.m.service.MscWebhookService - Webhook settings not found
+2025-06-26 05:09:48 - INFO 33448 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration started
+2025-06-26 05:09:48 - INFO 33448 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - Ready to dispatch MQTT messages.
+2025-06-26 05:09:53 - INFO 33448 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language done
+2025-06-26 05:10:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750885800
+2025-06-26 05:10:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 0 available tasks found
+2025-06-26 05:10:35 - INFO 33448 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language done
+2025-06-26 05:11:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750885860
+2025-06-26 05:11:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 0 available tasks found
+2025-06-26 05:12:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750885920
+2025-06-26 05:12:00 - INFO 33448 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 1 available tasks found
+2025-06-26 05:12:22 - INFO 33448 [][nioEventLoopGroup-3-1] INFO  i.m.broker.metrics.MQTTMessageLogger - C->B CONNECT <null>
+2025-06-26 05:12:22 - INFO 33448 [][nioEventLoopGroup-3-1] INFO  io.moquette.broker.MQTTConnection - Authenticator has rejected the MQTT credentials CId=sh2, username=test
+2025-06-26 05:12:22 - INFO 33448 [][nioEventLoopGroup-3-1] INFO  i.m.broker.metrics.MQTTMessageLogger - Channel Inactive
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is shutting down (timeout:45s)
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:1)
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) shutdown in 53ms (uptime:2m53s)
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopping
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopped
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Unbinding integration from the configured ports
+2025-06-26 05:12:37 - INFO 33448 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Waiting for worker and boss event loop groups to terminate...
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Metrics messages[read=2, write=2] bytes[read=56, write=0]
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Shutting down interceptor thread pool...
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Waiting for thread pool tasks to terminate...
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - interceptors stopped
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 interrupted
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 exit
+2025-06-26 05:12:39 - INFO 33448 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 exit
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Moquette integration has been stopped.
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-26 05:12:39 - INFO 33448 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-26 05:42:52 - INFO 34120 [][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-06-26 05:42:52 - INFO 34120 [][main] INFO  c.m.b.p.i.JPAApplicationContextInitializer - Enable JPA DataAspect function, and dynamically add JPA STATEMENT_INSPECTOR
+2025-06-26 05:42:52 - INFO 34120 [][main] INFO  c.m.beaveriot.StandardApplication - Starting StandardApplication using Java 17.0.15 with PID 34120 (C:\sensora\beaver-iot-sensora\application\application-standard\target\classes started by alvir in C:\sensora\beaver-iot-sensora)
+2025-06-26 05:42:52 - INFO 34120 [][main] INFO  c.m.beaveriot.StandardApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-26 05:42:59 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:42:59 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26 05:43:03 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3792 ms. Found 29 JPA repository interfaces.
+2025-06-26 05:43:04 - INFO 34120 [][main] INFO  o.s.c.annotation.AutoProxyRegistrar - AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2025-06-26 05:43:05 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:43:05 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.device.repository.DeviceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.devicetemplate.repository.DeviceTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardEntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardHomeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.MenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleMenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.TenantRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityLatestRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.credentials.repository.CredentialsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowEntityRelationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRefRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceTempRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.adapter.db.service.repository.DbResourceDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduledTaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduleSettingsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:43:06 - INFO 34120 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 265 ms. Found 0 JDBC repository interfaces.
+2025-06-26 05:43:07 - INFO 34120 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method GenericContextAutoConfiguration.springContext is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:43:07 - INFO 34120 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method RuleEngineAutoConfiguration.componentDefinitionCache is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:43:10 - WARN 34120 [][main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-26 05:43:10 - INFO 34120 [][main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-26 05:43:10 - INFO 34120 [][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16806 ms
+2025-06-26 05:43:11 - INFO 34120 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-26 05:43:12 - INFO 34120 [][main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:~/beaver-iot/h2/beaver user=SA
+2025-06-26 05:43:12 - INFO 34120 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-26 05:43:12 - INFO 34120 [][main] INFO  liquibase.database - Set default schema name to PUBLIC
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/authentication.sql
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/dashboard.sql
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/device.sql
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/entity.sql
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/schema.sql
+2025-06-26 05:43:15 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/user.sql
+2025-06-26 05:43:16 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/dashboard.sql
+2025-06-26 05:43:16 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/device.sql
+2025-06-26 05:43:16 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/entity.sql
+2025-06-26 05:43:16 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/user.sql
+2025-06-26 05:43:16 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/workflow.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/credentials.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/dashboard.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device_template.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/entity.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/mqtt.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/resource.sql
+2025-06-26 05:43:18 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/user.sql
+2025-06-26 05:43:19 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/workflow.sql
+2025-06-26 05:43:19 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/scheduler/h2/sql/v1.2.0/scheduler.sql
+2025-06-26 05:43:19 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.1/entity.sql
+2025-06-26 05:43:19 - INFO 34120 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.3.0/dashboard.sql
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - Run:                          0
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - Previously run:              49
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - Filtered out:                 0
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - -------------------------------
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - Total change sets:           49
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.util - Update summary generated
+2025-06-26 05:43:20 - INFO 34120 [][main] INFO  liquibase.command - Command execution complete
+2025-06-26 05:43:21 - INFO 34120 [][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26 05:43:21 - INFO 34120 [][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-06-26 05:43:21 - INFO 34120 [][main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-26 05:43:22 - INFO 34120 [][main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26 05:43:28 - INFO 34120 [][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26 05:43:28 - INFO 34120 [][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:43:30 - INFO 34120 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-06-26 05:43:30 - INFO 34120 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  io.moquette.broker.Server - Configuring message interceptors...
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  i.m.interception.BrokerInterceptor - Initializing broker interceptor. InterceptorIds=[DEFAULT_PUBLISH_LISTENER]
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  i.m.interception.BrokerInterceptor - Adding MQTT message interceptor. InterceptorId=DEFAULT_PUBLISH_LISTENER, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage, class io.moquette.interception.messages.InterceptConnectionLostMessage, class io.moquette.interception.messages.InterceptPublishMessage, class io.moquette.interception.messages.InterceptSubscribeMessage, class io.moquette.interception.messages.InterceptUnsubscribeMessage, class io.moquette.interception.messages.InterceptAcknowledgedMessage, class io.moquette.interception.messages.InterceptExceptionMessage]
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  io.moquette.broker.Server - Using default SSL context creator
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing CTrie
+2025-06-26 05:43:38 - INFO 34120 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing subscriptions store...
+2025-06-26 05:43:39 - INFO 34120 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Netty is using NIO
+2025-06-26 05:43:40 - INFO 34120 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2025-06-26 05:43:40 - INFO 34120 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=8083, protocol=Websocket MQTT
+2025-06-26 05:43:40 - INFO 34120 [][main] INFO  io.moquette.broker.Server - Moquette integration has been started successfully in 2097 ms
+2025-06-26 05:43:41 - INFO 34120 [][main] INFO  c.m.b.scheduler.core.Scheduler - schedule task 'clear-temp-resource' already exists
+2025-06-26 05:43:42 - INFO 34120 [][main] INFO  c.m.b.scheduler.core.Scheduler - schedule settings not changed: 'clear-temp-resource'
+2025-06-26 05:43:42 - INFO 34120 [][nioEventLoopGroup-3-1] INFO  i.m.broker.metrics.MQTTMessageLogger - C->B CONNECT <null>
+2025-06-26 05:43:42 - INFO 34120 [][nioEventLoopGroup-3-1] INFO  io.moquette.broker.MQTTConnection - Authenticator has rejected the MQTT credentials CId=sh2, username=test
+2025-06-26 05:43:42 - INFO 34120 [][nioEventLoopGroup-3-1] INFO  i.m.broker.metrics.MQTTMessageLogger - Channel Inactive
+2025-06-26 05:43:42 - INFO 34120 [][main] INFO  c.m.b.scheduler.core.Scheduler - existing scheduled task found, execution time: 1750886006
+2025-06-26 05:43:42 - INFO 34120 [][main] INFO  c.m.b.scheduler.core.Scheduler - callback for schedule task 'clear-temp-resource' was registered
+2025-06-26 05:43:44 - INFO 34120 [][main] INFO  o.a.c.m.DefaultConfigurationConfigurer - Adding custom InterceptStrategy with id: ruleEngineContextInterceptor and implementation: com.milesight.beaveriot.rule.observe.RuleEngineContextInterceptor@23e1051b
+2025-06-26 05:43:45 - WARN 34120 [][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-26 05:43:47 - INFO 34120 [][main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-26 05:43:47 - WARN 34120 [][main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-06-26 05:43:49 - INFO 34120 [][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-06-26 05:43:56 - INFO 34120 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language start
+2025-06-26 05:43:56 - INFO 34120 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language start
+2025-06-26 05:43:57 - INFO 34120 [][main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2025-06-26 05:43:57 - INFO 34120 [][main] INFO  org.xnio - XNIO version 3.8.16.Final
+2025-06-26 05:43:57 - INFO 34120 [][main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2025-06-26 05:43:57 - INFO 34120 [][main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-06-26 05:43:57 - INFO 34120 [][main] INFO  o.s.b.w.e.undertow.UndertowWebServer - Undertow started on port 9200 (http) with context path '/'
+2025-06-26 05:43:58 - INFO 34120 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is starting
+2025-06-26 05:43:58 - INFO 34120 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Tracing is enabled on CamelContext: camel-1
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:1)
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) started in 140ms (build:0ms init:0ms start:140ms)
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  c.m.beaveriot.StandardApplication - Started StandardApplication in 68.431 seconds (process running for 71.135)
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/uplink'
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/response'
+2025-06-26 05:43:59 - INFO 34120 [][main] INFO  c.m.b.c.i.b.IntegrationBootstrapManager - IntegrationBootstrapManager started, contains integrations : [system, milesight-gateway, msc-integration]
+2025-06-26 05:44:00 - INFO 34120 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750887840
+2025-06-26 05:44:00 - INFO 34120 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 1 available tasks found
+2025-06-26 05:44:00 - INFO 34120 [][pool-11-thread-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - scheduled task 'clear-temp-resource'(1937982241884864514) was expired
+2025-06-26 05:44:00 - INFO 34120 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration starting
+2025-06-26 05:44:01 - INFO 34120 [][main] INFO  c.m.b.i.m.service.MscWebhookService - Webhook settings not found
+2025-06-26 05:44:01 - INFO 34120 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration started
+2025-06-26 05:44:01 - INFO 34120 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - Ready to dispatch MQTT messages.
+2025-06-26 05:44:07 - INFO 34120 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language done
+2025-06-26 05:44:40 - INFO 34120 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language done
+2025-06-26 05:45:00 - INFO 34120 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750887900
+2025-06-26 05:45:00 - INFO 34120 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 0 available tasks found
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is shutting down (timeout:45s)
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:1)
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) shutdown in 64ms (uptime:1m25s)
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopping
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopped
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Unbinding integration from the configured ports
+2025-06-26 05:45:24 - INFO 34120 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Waiting for worker and boss event loop groups to terminate...
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Metrics messages[read=2, write=2] bytes[read=56, write=0]
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Shutting down interceptor thread pool...
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Waiting for thread pool tasks to terminate...
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - interceptors stopped
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 interrupted
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 exit
+2025-06-26 05:45:27 - INFO 34120 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 exit
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Moquette integration has been stopped.
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-26 05:45:27 - INFO 34120 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-26 05:53:44 - INFO 4440 [][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-06-26 05:53:44 - INFO 4440 [][main] INFO  c.m.b.p.i.JPAApplicationContextInitializer - Enable JPA DataAspect function, and dynamically add JPA STATEMENT_INSPECTOR
+2025-06-26 05:53:44 - INFO 4440 [][main] INFO  c.m.beaveriot.StandardApplication - Starting StandardApplication using Java 17.0.15 with PID 4440 (C:\sensora\beaver-iot-sensora\application\application-standard\target\classes started by alvir in C:\sensora\beaver-iot-sensora)
+2025-06-26 05:53:44 - INFO 4440 [][main] INFO  c.m.beaveriot.StandardApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-26 05:53:52 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:53:52 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26 05:53:55 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3733 ms. Found 29 JPA repository interfaces.
+2025-06-26 05:53:56 - INFO 4440 [][main] INFO  o.s.c.annotation.AutoProxyRegistrar - AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2025-06-26 05:53:58 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26 05:53:58 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.device.repository.DeviceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.devicetemplate.repository.DeviceTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardEntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardHomeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.dashboard.repository.DashboardWidgetTemplateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.MenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleMenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.RoleResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.TenantRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.user.repository.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityLatestRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.entity.repository.EntityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.credentials.repository.CredentialsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowEntityRelationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowLogRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.rule.manager.repository.WorkflowRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRefRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.manager.repository.ResourceTempRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.resource.adapter.db.service.repository.DbResourceDataRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduledTaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.milesight.beaveriot.scheduler.core.ScheduleSettingsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26 05:53:59 - INFO 4440 [][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 290 ms. Found 0 JDBC repository interfaces.
+2025-06-26 05:54:00 - INFO 4440 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method GenericContextAutoConfiguration.springContext is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:54:00 - INFO 4440 [][main] INFO  o.s.c.a.ConfigurationClassEnhancer - @Bean method RuleEngineAutoConfiguration.componentDefinitionCache is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2025-06-26 05:54:05 - WARN 4440 [][main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-26 05:54:05 - INFO 4440 [][main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-26 05:54:05 - INFO 4440 [][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19378 ms
+2025-06-26 05:54:06 - INFO 4440 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-26 05:54:08 - INFO 4440 [][main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:~/beaver-iot/h2/beaver user=SA
+2025-06-26 05:54:08 - INFO 4440 [][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-26 05:54:08 - INFO 4440 [][main] INFO  liquibase.database - Set default schema name to PUBLIC
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/authentication.sql
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/dashboard.sql
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/device.sql
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/entity.sql
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/schema.sql
+2025-06-26 05:54:11 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.0.0/user.sql
+2025-06-26 05:54:12 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/dashboard.sql
+2025-06-26 05:54:12 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/device.sql
+2025-06-26 05:54:12 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/entity.sql
+2025-06-26 05:54:12 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/user.sql
+2025-06-26 05:54:12 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.1.0/workflow.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/credentials.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/dashboard.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/device_template.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/entity.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/mqtt.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/resource.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/user.sql
+2025-06-26 05:54:14 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.0/workflow.sql
+2025-06-26 05:54:15 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/scheduler/h2/sql/v1.2.0/scheduler.sql
+2025-06-26 05:54:15 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.2.1/entity.sql
+2025-06-26 05:54:15 - INFO 4440 [][main] INFO  liquibase.changelog - Reading resource: db/h2/sql/v1.3.0/dashboard.sql
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - Run:                          0
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - Previously run:              49
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - Filtered out:                 0
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - -------------------------------
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - Total change sets:           49
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.util - Update summary generated
+2025-06-26 05:54:16 - INFO 4440 [][main] INFO  liquibase.command - Command execution complete
+2025-06-26 05:54:17 - INFO 4440 [][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26 05:54:18 - INFO 4440 [][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-06-26 05:54:18 - INFO 4440 [][main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-26 05:54:19 - INFO 4440 [][main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26 05:54:25 - INFO 4440 [][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26 05:54:25 - INFO 4440 [][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:54:28 - INFO 4440 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-06-26 05:54:28 - INFO 4440 [][main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  io.moquette.broker.Server - Configuring message interceptors...
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  i.m.interception.BrokerInterceptor - Initializing broker interceptor. InterceptorIds=[DEFAULT_PUBLISH_LISTENER]
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  i.m.interception.BrokerInterceptor - Adding MQTT message interceptor. InterceptorId=DEFAULT_PUBLISH_LISTENER, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage, class io.moquette.interception.messages.InterceptConnectionLostMessage, class io.moquette.interception.messages.InterceptPublishMessage, class io.moquette.interception.messages.InterceptSubscribeMessage, class io.moquette.interception.messages.InterceptUnsubscribeMessage, class io.moquette.interception.messages.InterceptAcknowledgedMessage, class io.moquette.interception.messages.InterceptExceptionMessage]
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  io.moquette.broker.Server - Using default SSL context creator
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing CTrie
+2025-06-26 05:54:38 - INFO 4440 [][main] INFO  i.m.b.s.CTrieSubscriptionDirectory - Initializing subscriptions store...
+2025-06-26 05:54:39 - INFO 4440 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Netty is using NIO
+2025-06-26 05:54:40 - INFO 4440 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2025-06-26 05:54:40 - INFO 4440 [][main] INFO  io.moquette.broker.NewNettyAcceptor - Server bound to host=0.0.0.0, port=8083, protocol=Websocket MQTT
+2025-06-26 05:54:40 - INFO 4440 [][main] INFO  io.moquette.broker.Server - Moquette integration has been started successfully in 2192 ms
+2025-06-26 05:54:41 - INFO 4440 [][main] INFO  c.m.b.scheduler.core.Scheduler - schedule task 'clear-temp-resource' already exists
+2025-06-26 05:54:42 - INFO 4440 [][main] INFO  c.m.b.scheduler.core.Scheduler - schedule settings not changed: 'clear-temp-resource'
+2025-06-26 05:54:42 - INFO 4440 [][main] INFO  c.m.b.scheduler.core.Scheduler - existing scheduled task found, execution time: 1750887926
+2025-06-26 05:54:42 - INFO 4440 [][main] INFO  c.m.b.scheduler.core.Scheduler - callback for schedule task 'clear-temp-resource' was registered
+2025-06-26 05:54:44 - INFO 4440 [][main] INFO  o.a.c.m.DefaultConfigurationConfigurer - Adding custom InterceptStrategy with id: ruleEngineContextInterceptor and implementation: com.milesight.beaveriot.rule.observe.RuleEngineContextInterceptor@5964c44e
+2025-06-26 05:54:45 - WARN 4440 [][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-26 05:54:46 - INFO 4440 [][main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-26 05:54:46 - WARN 4440 [][main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-06-26 05:54:49 - INFO 4440 [][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-06-26 05:54:57 - INFO 4440 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language start
+2025-06-26 05:54:57 - INFO 4440 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language start
+2025-06-26 05:54:58 - INFO 4440 [][main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2025-06-26 05:54:58 - INFO 4440 [][main] INFO  org.xnio - XNIO version 3.8.16.Final
+2025-06-26 05:54:58 - INFO 4440 [][main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2025-06-26 05:54:58 - INFO 4440 [][main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-06-26 05:54:58 - INFO 4440 [][main] INFO  o.s.b.w.e.undertow.UndertowWebServer - Undertow started on port 9200 (http) with context path '/'
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is starting
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Tracing is enabled on CamelContext: camel-1
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:1)
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) started in 102ms (build:0ms init:0ms start:102ms)
+2025-06-26 05:54:59 - INFO 4440 [][main] INFO  c.m.beaveriot.StandardApplication - Started StandardApplication in 77.33 seconds (process running for 79.389)
+2025-06-26 05:55:00 - INFO 4440 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750888500
+2025-06-26 05:55:00 - INFO 4440 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 1 available tasks found
+2025-06-26 05:55:00 - INFO 4440 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/uplink'
+2025-06-26 05:55:00 - INFO 4440 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - subscribe topic: 'beaver-iot/+/milesight-gateway/+/response'
+2025-06-26 05:55:00 - INFO 4440 [][main] INFO  c.m.b.c.i.b.IntegrationBootstrapManager - IntegrationBootstrapManager started, contains integrations : [system, milesight-gateway, msc-integration]
+2025-06-26 05:55:01 - INFO 4440 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration starting
+2025-06-26 05:55:01 - INFO 4440 [][main] INFO  c.m.b.i.m.service.MscWebhookService - Webhook settings not found
+2025-06-26 05:55:01 - INFO 4440 [][main] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration started
+2025-06-26 05:55:01 - INFO 4440 [][main] INFO  c.m.b.mqtt.service.MqttPubSubService - Ready to dispatch MQTT messages.
+2025-06-26 05:55:07 - INFO 4440 [][Thread-19] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] js-language done
+2025-06-26 05:55:42 - INFO 4440 [][Thread-20] INFO  c.m.b.r.c.c.LanguageRouteConfigurer - [Language-Warming] python-language done
+2025-06-26 05:56:00 - INFO 4440 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - run scheduled tasks: 1750888560
+2025-06-26 05:56:00 - INFO 4440 [][scheduling-1] INFO  c.m.b.s.core.ScheduledTaskExecutor - 0 available tasks found
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) is shutting down (timeout:45s)
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:1)
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped innerExchangeRoute (direct://innerExchangeFlow)
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.4.3 (camel-1) shutdown in 77ms (uptime:1m21s)
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopping
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  c.m.b.i.msc.MscIntegrationBootstrap - MSC integration stopped
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Unbinding integration from the configured ports
+2025-06-26 05:56:21 - INFO 4440 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Waiting for worker and boss event loop groups to terminate...
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.NewNettyAcceptor - Metrics messages[read=0, write=0] bytes[read=0, write=0]
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Shutting down interceptor thread pool...
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - Waiting for thread pool tasks to terminate...
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.interception.BrokerInterceptor - interceptors stopped
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  i.m.b.s.ScheduledExpirationService - Successfully cancelled expired entities task
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 4] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 4 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 5] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 5 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 3] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 3 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 1] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 1 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 9] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 9 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 6] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 6 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 2] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 2 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 0] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 0 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 7] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 7 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 12] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 12 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 8] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 8 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 10] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 10 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 interrupted
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 11] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 11 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 13] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 13 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 14] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 14 exit
+2025-06-26 05:56:23 - INFO 4440 [][Session Executor 15] INFO  io.moquette.broker.SessionEventLoop - SessionEventLoop Session Executor 15 exit
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  io.moquette.broker.Server - Moquette integration has been stopped.
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-26 05:56:23 - INFO 4440 [][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
