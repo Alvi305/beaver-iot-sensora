@@ -133,4 +133,4 @@ nb-configuration.xml
 ##############################
 .DS_Store
 
-.log
+*.log
