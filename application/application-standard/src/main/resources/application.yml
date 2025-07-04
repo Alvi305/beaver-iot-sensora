@@ -171,16 +171,20 @@ mqtt:
     mqtt_port: 1883
     ws_path: /mqtt
     ws_port: 8083
+    topic-subpath: em320th/data
     moquette:
       port: ${mqtt.broker.mqtt_port:1883}
       host: 0.0.0.0
-      allow_anonymous: false
+      allow_anonymous: true
       persistence_enabled: false
       websocket_port: ${mqtt.broker.ws_port:8083}
       websocket_path: ${mqtt.broker.ws_path:/mqtt}
       netty:
         mqtt:
           message_size: 1048576
+      #client-id: ug56A
+#      username: test
+#      password: alvi
 
 resource:
   storage: ${RESOURCE_STORAGE:db}
@@ -197,6 +201,7 @@ logging:
     root: DEBUG
     com.milesight.beaveriot: ${LOGGING_LEVEL_BEAVER_IOT:info}
     com.milesight.beaveriot.context.integration.bootstrap: DEBUG
+    io.moquette.broker: DEBUG
 
 OAUTH2_RSA_PRIVATE_KEY: |
   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtCpHZwvZf9hUQgYGpQoK3Y7fn
